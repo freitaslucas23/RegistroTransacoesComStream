@@ -8,19 +8,19 @@ public class RegistroTransacoesComStream {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("");
+        System.out.println("saldo: ");
         double saldo = scanner.nextDouble();
 
-        System.out.println("");
+        System.out.println("qnt transacoes: ");
         int quantidadeTransacoes = scanner.nextInt();
 
         List<Transacao> transacoes = new ArrayList<>();
 
         for (int i = 1; i <= quantidadeTransacoes; i++) {
-            System.out.println("");
+            System.out.println("tipo de Transacao: ");
             char tipoTransacao = scanner.next().charAt(0);
 
-            System.out.println("");
+            System.out.println("valor");
             double valorTransacao = scanner.nextDouble();
 
             Transacao transacao = new Transacao(tipoTransacao, valorTransacao);
